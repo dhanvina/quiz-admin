@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="/authenticate" method="POST">
+    <label for="school_code">School Code:</label>
+    <input type="text" id="school_code" name="school_code" required>
+    <button type="submit">Login</button>
+</form>
+{% endblock %}
