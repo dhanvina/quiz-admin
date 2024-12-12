@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.secret_key = "supersecretkey"  # Replace with an actual secret key
 
 # Firebase Admin Initialization
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate(r"C:\Users\Dhanvina.000\Downloads\quizapp-36d3b-firebase-adminsdk-xierf-bee7c686f3.json")
 initialize_app(cred)
 db = firestore.client()
 
